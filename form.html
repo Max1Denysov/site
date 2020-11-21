@@ -1,0 +1,214 @@
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Форма заказа</title>
+<style>
+h3 {
+    background: white; /* Цвет фона под заголовком */
+    color: green; /* Цвет текста */
+    padding: 2px; /* Поля вокруг текста */
+   }
+</style>
+ </head>
+ <body bgcolor="orange">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #yellow;
+}
+
+a {
+  color: blue;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+<h3 align="center" style="color: darkblue">Киномания</h3>
+<h5 align="center" style="color: blue">ФОРМА ЗАКАЗА</h5>
+<hr>
+
+
+<p align="left">
+Шаг 1. Выбор товаров.
+Выберите интересующий Вас товар. Для того чтобы сделать заказ нажмите ссылку В корзину около товара, который Вы хотите купить. Перемещение товара в корзину Вы сможете увидеть при нажатии. При добавлении товара в корзину, сумма заказа будет меняться автоматически.
+</p>
+<p align="left">
+Шаг 2. Редактирование корзины.
+Когда Вы уже добавили все выбранные товары в корзину, вы можете нажать кнопку корзина для просмотра и редактирования заказа. На этом этапе Вы можете удалить товары из корзины или изменить количество заказанных товаров. После редактирования корзины Вы можете продолжить выбор товаров, представленных на сайте. Для этого необходимо нажать кнопку Продолжить покупки. Если Вы определились с выбранным товаром, то необходимо перейти к оформлению заказа, нажать ссылку Оформить заказ.
+</p>
+<p align="left">
+Шаг 3. Оформление заказа.
+Нажмите ссылку "Оформить". Если Вы еще не зарегистрированы в нашем магазине, нажмите ссылку "Регистрация". На следующей странице заполните поля отмеченные звездочкой (*), если Вы уже зарегистрированы, просто введите логин и пароль. Регистрация необходима, если Вы в дальнейшем планируете совершать покупки в нашем магазине. Если Вы не хотите регистрироваться нажмите "Продолжить без регистрации", при этом необходимо ввести контактные данные для связи с Вами.
+</p>
+<p align="left">
+Шаг 4. Выбор типа доставки и оплаты.
+Нажмите кнопку "Продолжить". Выберите тип доставки. На текущий момент можно воспользоваться только услугами курьера (доставка по Москве). Нажмите ссылку "Продолжить". Выберите тип оплаты. На текущий момент возможна оплата только наличными.
+</p>
+<p align="left">
+Шаг 5. Подтверждение заказа.
+Проверьте правильность введенных Вами данных. В случае если требуются исправления, вернитесь на предыдущие шаги и внесите корректировки. Если все верно, нажмите кнопку "Оформить". Подтверждение заказа будет выслано Вам по электронной почте.
+</p>
+<p align="left">
+Шаг 6. Обработка и доставка заказа.
+Обработка заказов, поступивших через интернет, осуществляется менеджером с 10 до 20 часов в рабочие дни и с 12 до 18 часов в выходные дни.  
+</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Адрес Заказа</h3>
+            <label for="fname"><i class="fa fa-user"></i> ФИО</label>
+            <input type="text" id="fname" name="firstname" placeholder="Денисов Максим Игорович">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Адрес</label>
+            <input type="text" id="adr" name="address" placeholder="Проспект Победы 40,кв 7">
+            <label for="city"><i class="fa fa-institution"></i> Город</label>
+            <input type="text" id="city" name="city" placeholder="Днепр">
+
+            <div class="row">
+              <div class="col-50">
+                
+              </div>
+              <div class="col-50">
+                <label for="zip">Индекс</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Оплата</h3>
+            <label for="fname">Кредитная карта</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">ФИО</label>
+            <input type="text" id="cname" name="cardname" placeholder="Денисов Максим Игорович">
+            <label for="ccnum">Номер Карты</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">ММ</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Сентябрь">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">ГГ</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Доставка по адресу заказчика
+        </label>
+        <input type="submit" value="Совершить покупку" class="btn">
+      </form>
+    </div>
+  </div>
+
+  

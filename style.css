@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+} 
+ 
+h3 {
+    background: white; /* Цвет фона под заголовком */
+    color: green; /* Цвет текста */
+    padding: 1px; /* Поля вокруг текста */
+    text-align:center; 
+    /* */
+   }
+dd{
+    background: white;
+       display:block;
+    position: relative;
+    margin: auto; 
+    text-align:center;
+    color:black;
+   
+}
+#jstext {
+  text-align:left;
+  font-size: 100px;
+  font-family:
+    
+Grusskarten Gotisch;background-color: black;
+  color:lightblue;
+}
+#jstexts {
+  text-align:right;
+  font-size: 100px;
+  font-family:
+Grusskarten Gotisch;background-color: black;
+  color:hotpink;
+}
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4%;
+    height: 5%;
+}
